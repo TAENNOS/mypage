@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>부트스트랩 활용 / 웹페이지 만들기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            background-color: green;
+            color: white;
+
+            height: 300px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://p4.wallpaperbetter.com/wallpaper/656/49/254/5c1cb1041a1e7-wallpaper-preview.jpg);
+            background-position: 0px 900px;
+            background-size: 110%;
+        }
+
+        .mytitle>button {
+            width: 250px;
+            height: 50px;
+
+            background-color: transparent;
+
+            border: 1px solid white;
+            color: white;
+
+            border-radius: 50px;
+
+
+        }
+
+        .mytitle>button:hover {
+            border: 2px solid white;
+
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 20px auto 20px auto;
+        }
+
+        .mypost{
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+
+            box-shadow: 0px 0px 3px 0px;
+        }
+
+        .mybtn{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
+
+        .mybtn > button{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>내 생의 최고의 영화들</h1>
+        <button>영화 기록하기</button>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화URL</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">코멘트</label>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+     </div>
+       <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themoviedb.org/t/p/original/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">캐치미 이프 유 캔(2002)</h5>
+                            <p class="card-text">레오나르도 디카프리오, 톰 행크스 외</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p class="mycomment">개꿀잼</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themoviedb.org/t/p/original/saaF002g5bCArr746Gd6BlPdPC4.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">루비 스팍스</h5>
+                            <p class="card-text">폴 다노, 조 카잔 외</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p class="mycomment">나를 로코로 입문시킨 영화 개꿀잼</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/606/852/1016/silver-linings-playbook-wallpaper-preview.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">실버라이닝 플레이북.</h5>
+                            <p class="card-text">브래들리 쿠퍼, 제니퍼 로렌스 외</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p class="mycomment">미친 사람들의 순수한 사랑</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
+                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">여기에 나의 의견을 씁니다.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
